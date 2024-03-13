@@ -1,0 +1,103 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text", 
+      "list-context.image-list#demo",
+      "rich-text#title2",
+      "info-card",
+      "rich-text#title3",
+      "list-context.product-list#demo1",
+      "rich-text#fim" 
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "Alice in Shopland",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 800,
+      "images": [
+        {
+          "image": "https://i.imgur.com/083aPzU.jpeg",
+          "description": "alicinha"
+        },
+        {
+          "image": "https://i.imgur.com/ObznSvK.jpeg",
+          "description": "alicinha 2"
+        },
+        {
+          "image": "https://i.imgur.com/0IHcux4.jpeg",
+          "description": "alicinha 3"
+        }
+      ]
+    }
+  },
+  "rich-text#title2": { 
+    "props": { 
+      "text": "Olha eu de novo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "rich-text#title3": { 
+    "props": { 
+      "text": "Presentes para a minha mãe",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "rich-text#fim": {
+    "props": { 
+      "text": "\n**Venha me dar biscoito**\nwww.biscoito.com.br",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": "help-message"
+    }
+  },
+  
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "info-card": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://i.imgur.com/TM5Bszp.jpg",
+      "headline": "Quem é legal dá presente",
+      "callToActionText": "Sou legal",
+      "callToActionUrl": "https://www.cobasi.com.br/c/cachorro/petiscos",
+      "linkTarget": "_blank",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "product-summary.shelf#demo1": {
+    "children": [
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-name",
+      "product-summary-buy-button"
+    ]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#demo1"],
+    "children": ["slider-layout"]
+  }
+}
